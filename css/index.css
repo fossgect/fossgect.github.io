@@ -766,6 +766,7 @@ strong {
 .guidelines-section ul li{
     color: #ffffff;
 }
+
 .guideDiv{
     display: flex;
     flex-direction: column;
@@ -913,6 +914,19 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media screen and (min-width:1250px) {
+    .guidelines-section ul li{
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .guidelines-section h2{
+        font-size: 50px;
+    }
+    .guidelines-section h3{
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     h1 {
         font-size: 62px;
@@ -936,6 +950,9 @@ strong {
 
     h6 {
         font-size: 18px;
+    }
+    :root {
+        --p-font-size: 25px;
     }
 
     .section-padding {
@@ -998,11 +1015,11 @@ strong {
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 33px;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     h4 {
@@ -1016,7 +1033,7 @@ strong {
         height: 40px;
     }
     :root {
-        --p-font-size: 13px;
+        --p-font-size: 16px;
     }
     .artists-hover {
         margin: 10px;
@@ -1024,6 +1041,10 @@ strong {
     }
     .artists-thumb:hover .head-div {
         display: none;
+    }
+    .guidelines-section{
+        height: 80vh;
+        padding: 2vw;
     }
 }
 
